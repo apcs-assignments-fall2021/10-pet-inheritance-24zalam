@@ -12,6 +12,11 @@ public class Dog extends Pet {
         super(a,b);
         this.breed="Husky";
 
+
+    }
+    public Dog() {
+        super("Jerry", 2);
+        this.breed ="poodle";
     }
 
     // makeNoise() method
@@ -29,7 +34,7 @@ public class Dog extends Pet {
 public String getBreed() { return this.breed; }
 
     // Setter
-    public void setBreed(int classYear) {
+    public void setBreed(String breed) {
         this.breed = breed;
     }
 }
